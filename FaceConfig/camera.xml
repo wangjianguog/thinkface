@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cameras>
+    
+    <camera>    
+		<cameraID>camera2</cameraID>
+        <cameraIP>10.110.132.230</cameraIP>
+		<cameraUrl>rtsp://admin:lenovo1234@10.110.132.230:554/h264/ch1/main/av_stream</cameraUrl>
+		<cameraLiving>false</cameraLiving>
+	</camera>
+    <camera>    
+		<cameraID>camera1</cameraID>
+        <cameraIP>10.110.132.150</cameraIP>
+		<cameraUrl>rtsp://admin:lenovo1234@10.110.132.150:554/h264/ch1/main/av_stream</cameraUrl>
+		<cameraLiving>false</cameraLiving>
+	</camera>
+    
+
+</cameras>

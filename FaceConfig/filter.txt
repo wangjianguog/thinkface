@@ -1,0 +1,4 @@
+db_u,db_p,db_url,FaceQualityOK,FaceRegisterQualityOK,FaceBlurOK,FaceRegisterBlurOK,FacePoseOK,FaceRegisterPoseOK,MinFaceSize,MaxFaceSize,MinRegisterFaceSize,MinPadFaceSize
+
+
+

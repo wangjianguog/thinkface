@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd ">
+
+	<bean id="datasource"
+		class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
+		<property name="jdbcUrl" value="jdbc:mysql://docker-mysql:3306/lenovo_face_module?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf-8"/>
+		<property name="user" value="root"/>
+		<property name="password" value="123456" />
+		<property name="maxIdleTime" value="10000"/>
+		<property name="initialPoolSize" value="3"/>
+		<property name="minPoolSize" value="2"/>
+		<property name="maxPoolSize" value="10"/>
+	</bean>
+
+	<bean id="table_record"
+		class="cn.lenovo.leface.face.sql.RecordDaoImp">
+		<property name="datasource" ref="datasource" />
+	</bean>
+
+</beans>

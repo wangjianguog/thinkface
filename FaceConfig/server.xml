@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<params>
+	<param>
+    	<!-- state Server url -->
+    	<stateServerUrl></stateServerUrl>
+
+    	<!-- history Server url -->
+    	<historyServerUrl></historyServerUrl>
+
+        <!-- 默认开启人脸识别服务线程数 -->
+        <InitedServerNum>3</InitedServerNum>
+        <!-- 最大开启人脸识别服务线程数 -->
+        <MaxServerNum>3</MaxServerNum>
+        <!-- 人脸识别模型名 -->
+        <recog_model_name>leface_recog_1.7e.pb</recog_model_name>
+        
+    	<!-- 注册底图保存位置 -->
+        <registerPath>./faceData/register</registerPath>
+        <!-- 临时识别图片保存位置 -->
+        <imgPath>./faceData/pad</imgPath>
+        <!-- Pad临时识别图片保存位置 -->
+        <imgPadPath>./faceData/pad</imgPadPath>
+        
+        <!-- 云从人脸识别模型位置 -->
+        <modelPath>./model</modelPath>
+        
+        <!-- DBU -->
+        <db_u>root</db_u>
+        <!-- DBp -->
+        <db_p>123456</db_p>
+        <!-- DB_URL -->
+        <db_url>jdbc:mysql://docker-mysql:3306/lenovo_face_module</db_url>
+
+    </param>  
+</params>

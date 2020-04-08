@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<params>
+	<param>
+        <!-- 小比例人脸丢弃值 -->
+        <smallFaceSizeRate>0.2f</smallFaceSizeRate>
+
+        <!-- 人脸识别相似度阈值 -->
+        <FaceSimilarThres>0.83f</FaceSimilarThres>
+        
+        <!-- 人脸图片质量阈值 -->
+        <FaceQualityOK>0.65f</FaceQualityOK>
+        <!-- 注册用人脸图片质量阈值 -->
+        <FaceRegisterQualityOK>0.75f</FaceRegisterQualityOK>
+
+        <!-- 人脸图片模糊度质量阈值 -->
+        <FaceBlurOK>0.75f</FaceBlurOK>
+        <!-- 注册用人脸图片模糊度质量阈值 -->
+        <FaceRegisterBlurOK>0.80f</FaceRegisterBlurOK>
+        
+        <!-- 人脸图片角度质量阈值 0.50对应±30°-->
+        <FacePoseOK>30.0f</FacePoseOK>
+        <!-- 注册用人脸图片角度质量阈值 0.70对应±26°-->
+        <FaceRegisterPoseOK>30.0f</FaceRegisterPoseOK>
+  
+        <MaxFaceNum>20</MaxFaceNum>
+        <!-- MinFaceSize为SDK层的人脸检测最小尺寸，应该比 MinRegisterFaceSize和MinPadFaceSize大-->
+        <MinFaceSize>60</MinFaceSize>
+        <MaxFaceSize>2000</MaxFaceSize>
+        <MinRegisterFaceSize>100</MinRegisterFaceSize>
+        <MinPadFaceSize>60</MinPadFaceSize>
+    </param>  
+</params>
